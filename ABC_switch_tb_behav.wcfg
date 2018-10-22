@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="ABC_switch_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="ABC_switch_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="312332500000fs"></ZoomStartTime>
+      <ZoomEndTime time="337592500001fs"></ZoomEndTime>
+      <Cursor1Time time="318692500000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="252"></NameColumnWidth>
+      <ValueColumnWidth column_width="81"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="21" />
+   <wvobject fp_name="/ABC_switch_tb/test/sys_clk_100M" type="logic">
+      <obj_property name="ElementShortName">sys_clk_100M</obj_property>
+      <obj_property name="ObjectShortName">sys_clk_100M</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ABC_switch_tb/test/finished" type="logic">
+      <obj_property name="ElementShortName">finished</obj_property>
+      <obj_property name="ObjectShortName">finished</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ABC_switch_tb/test/PHI2_A" type="logic">
+      <obj_property name="ElementShortName">PHI2_A</obj_property>
+      <obj_property name="ObjectShortName">PHI2_A</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ABC_switch_tb/test/PHI1_A" type="logic">
+      <obj_property name="ElementShortName">PHI1_A</obj_property>
+      <obj_property name="ObjectShortName">PHI1_A</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ABC_switch_tb/test/PHI3_A" type="logic">
+      <obj_property name="ElementShortName">PHI3_A</obj_property>
+      <obj_property name="ObjectShortName">PHI3_A</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ABC_switch_tb/test/CLK_LATCH_A" type="logic">
+      <obj_property name="ElementShortName">CLK_LATCH_A</obj_property>
+      <obj_property name="ObjectShortName">CLK_LATCH_A</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ABC_switch_tb/test/CLK_CH_A" type="logic">
+      <obj_property name="ElementShortName">CLK_CH_A</obj_property>
+      <obj_property name="ObjectShortName">CLK_CH_A</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ABC_switch_tb/test/CLK_DEC" type="logic">
+      <obj_property name="ElementShortName">CLK_DEC</obj_property>
+      <obj_property name="ObjectShortName">CLK_DEC</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ABC_switch_tb/test/CLK_D_A" type="logic">
+      <obj_property name="ElementShortName">CLK_D_A</obj_property>
+      <obj_property name="ObjectShortName">CLK_D_A</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ABC_switch_tb/test/DATA_OUT" type="logic">
+      <obj_property name="ElementShortName">DATA_OUT</obj_property>
+      <obj_property name="ObjectShortName">DATA_OUT</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ABC_switch_tb/test/D_recorder_2/input_clk" type="logic">
+      <obj_property name="ElementShortName">input_clk</obj_property>
+      <obj_property name="ObjectShortName">input_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ABC_switch_tb/test/ready" type="logic">
+      <obj_property name="ElementShortName">ready</obj_property>
+      <obj_property name="ObjectShortName">ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ABC_switch_tb/test/D_recorder_2/temp" type="array">
+      <obj_property name="ElementShortName">temp[11:0]</obj_property>
+      <obj_property name="ObjectShortName">temp[11:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ABC_switch_tb/test/D_recorder_2/parallel" type="array">
+      <obj_property name="ElementShortName">parallel[11:0]</obj_property>
+      <obj_property name="ObjectShortName">parallel[11:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ABC_switch_tb/test/shift_1_write_0" type="logic">
+      <obj_property name="ElementShortName">shift_1_write_0</obj_property>
+      <obj_property name="ObjectShortName">shift_1_write_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ABC_switch_tb/test/chip_spi_clk" type="logic">
+      <obj_property name="ElementShortName">chip_spi_clk</obj_property>
+      <obj_property name="ObjectShortName">chip_spi_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ABC_switch_tb/test/serial" type="logic">
+      <obj_property name="ElementShortName">serial</obj_property>
+      <obj_property name="ObjectShortName">serial</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ABC_switch_tb/test/load_spi" type="logic">
+      <obj_property name="ElementShortName">load_spi</obj_property>
+      <obj_property name="ObjectShortName">load_spi</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ABC_switch_tb/test/spi_clk_out_stem" type="logic">
+      <obj_property name="ElementShortName">spi_clk_out_stem</obj_property>
+      <obj_property name="ObjectShortName">spi_clk_out_stem</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ABC_switch_tb/test/reset_control" type="logic">
+      <obj_property name="ElementShortName">reset_control</obj_property>
+      <obj_property name="ObjectShortName">reset_control</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ABC_switch_tb/test/mannul_change" type="logic">
+      <obj_property name="ElementShortName">mannul_change</obj_property>
+      <obj_property name="ObjectShortName">mannul_change</obj_property>
+   </wvobject>
+</wave_config>

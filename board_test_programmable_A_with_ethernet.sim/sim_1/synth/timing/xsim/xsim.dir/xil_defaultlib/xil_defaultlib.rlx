@@ -1,0 +1,16 @@
+0.6
+2018.1
+Apr  4 2018
+19:30:32
+D:/Neurostimulation/Mike Copy/board_test_programmable_A_with_ethernet.sim/sim_1/synth/timing/xsim/starterBC_time_synth.v,1528478638,verilog,,D:/Neurostimulation/Mike Copy/board_test_programmable_A_with_ethernet.srcs/sources_1/new/CLK_CH_A_generator.v,,add_crc32;add_preamble;board_testBC;byte_data;clk_wiz_100M_to_400M;clk_wiz_100M_to_400M_clk_wiz_100M_to_400M_clk_wiz;gigabit_test;glbl;rgmii_rx;rgmii_tx,,,,,,,,
+D:/Neurostimulation/Mike Copy/board_test_programmable_A_with_ethernet.srcs/sim_1/new/ABC_switch_tb.v,1502820113,verilog,,,,ABC_switch_tb,,,,,,,,
+D:/Neurostimulation/Mike Copy/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/new/clk_booster.v,1501354014,verilog,,D:/Neurostimulation/Mike Copy/board_test_programmable_A_with_ethernet.srcs/sources_1/new/dac_reset.v,,clk_booster,,,,,,,,
+D:/Neurostimulation/Mike Copy/board_test_programmable_A_with_ethernet.srcs/sources_1/new/CLK_CH_A_generator.v,1527872931,verilog,,D:/Neurostimulation/Mike Copy/board_test_programmable_A_with_ethernet.srcs/sources_1/new/CLK_D_A_generator.v,,CLK_CH_generator,,,,,,,,
+D:/Neurostimulation/Mike Copy/board_test_programmable_A_with_ethernet.srcs/sources_1/new/CLK_D_A_generator.v,1527872933,verilog,,D:/Neurostimulation/Mike Copy/board_test_programmable_A_with_ethernet.srcs/sources_1/new/CLK_LATCH_A_generator.v,,CLK_D_generator,,,,,,,,
+D:/Neurostimulation/Mike Copy/board_test_programmable_A_with_ethernet.srcs/sources_1/new/CLK_LATCH_A_generator.v,1527872934,verilog,,D:/Neurostimulation/Mike Copy/board_test_programmable_A_with_ethernet.srcs/sources_1/new/PSI_stem.v,,CLK_LATCH_generator,,,,,,,,
+D:/Neurostimulation/Mike Copy/board_test_programmable_A_with_ethernet.srcs/sources_1/new/PSI_stem.v,1500401871,verilog,,D:/Neurostimulation/Mike Copy/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/new/clk_booster.v,,PSI_stem,,,,,,,,
+D:/Neurostimulation/Mike Copy/board_test_programmable_A_with_ethernet.srcs/sources_1/new/dac_reset.v,1502325446,verilog,,D:/Neurostimulation/Mike Copy/board_test_programmable_A_with_ethernet.srcs/sources_1/new/programmable_3_phase_clock.v,,dac_reset,,,,,,,,
+D:/Neurostimulation/Mike Copy/board_test_programmable_A_with_ethernet.srcs/sources_1/new/programmable_3_phase_clock.v,1501696317,verilog,,D:/Neurostimulation/board_test_programmable_A_with_ethernet_mannul_channel_change/board_test_programmable_A_with_ethernet.srcs/sources_1/new/structre_A.v,,programmable_3_phase_clock,,,,,,,,
+D:/Neurostimulation/Mike Copy/board_test_programmable_A_with_ethernet.srcs/sources_1/new/starter_ABC.v,1528475706,verilog,,,,starterBC,,,,,,,,
+D:/Neurostimulation/Mike Copy/board_test_programmable_A_with_ethernet.srcs/sources_1/new/structure_clocks.v,1527873535,verilog,,D:/Neurostimulation/Mike Copy/board_test_programmable_A_with_ethernet.srcs/sources_1/new/starter_ABC.v,,structure_clocks,,,,,,,,
+D:/Neurostimulation/board_test_programmable_A_with_ethernet_mannul_channel_change/board_test_programmable_A_with_ethernet.srcs/sources_1/new/structre_A.v,1502640183,verilog,,D:/Neurostimulation/Mike Copy/board_test_programmable_A_with_ethernet.srcs/sources_1/new/structure_clocks.v,,structre_A,,,,,,,,

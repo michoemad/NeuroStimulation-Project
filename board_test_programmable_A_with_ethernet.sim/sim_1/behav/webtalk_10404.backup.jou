@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.2.1 (64-bit)
+# SW Build 1957588 on Wed Aug  9 16:32:24 MDT 2017
+# IP Build 1948039 on Wed Aug  9 18:19:28 MDT 2017
+# Start of session at: Thu Aug 24 11:51:35 2017
+# Process ID: 10404
+# Current directory: D:/2017summerR/vivado_projects/final_tester_no_channel_change/temp/board_test_programmable_A_with_ethernet.sim/sim_1/behav
+# Command line: wbtcv.exe -mode batch -source D:/2017summerR/vivado_projects/final_tester_no_channel_change/temp/board_test_programmable_A_with_ethernet.sim/sim_1/behav/xsim.dir/ABC_switch_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/2017summerR/vivado_projects/final_tester_no_channel_change/temp/board_test_programmable_A_with_ethernet.sim/sim_1/behav/webtalk.log
+# Journal file: D:/2017summerR/vivado_projects/final_tester_no_channel_change/temp/board_test_programmable_A_with_ethernet.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source D:/2017summerR/vivado_projects/final_tester_no_channel_change/temp/board_test_programmable_A_with_ethernet.sim/sim_1/behav/xsim.dir/ABC_switch_tb_behav/webtalk/xsim_webtalk.tcl -notrace

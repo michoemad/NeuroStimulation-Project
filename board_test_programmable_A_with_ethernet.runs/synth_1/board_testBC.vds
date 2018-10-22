@@ -1,0 +1,1163 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Thu Aug 23 15:08:56 2018
+# Process ID: 18168
+# Current directory: D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.runs/synth_1
+# Command line: vivado.exe -log board_testBC.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source board_testBC.tcl
+# Log file: D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.runs/synth_1/board_testBC.vds
+# Journal file: D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source board_testBC.tcl -notrace
+Command: synth_design -top board_testBC -part xc7a200tsbg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12424 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 388.930 ; gain = 98.766
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'board_testBC' [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/board_test.v:22]
+INFO: [Synth 8-6157] synthesizing module 'starterBC' [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/starter_ABC.v:33]
+	Parameter done_DELAY bound to: 300 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'PSI_stem' [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/PSI_stem.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PSI_stem' (1#1) [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/PSI_stem.v:23]
+INFO: [Synth 8-6157] synthesizing module 'structure_clocks' [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/structure_clocks.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_booster' [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/new/clk_booster.v:22]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_100M_to_400M' [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.runs/synth_1/.Xil/Vivado-18168-LAPTOP-HPTS9AFJ/realtime/clk_wiz_100M_to_400M_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_100M_to_400M' (2#1) [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.runs/synth_1/.Xil/Vivado-18168-LAPTOP-HPTS9AFJ/realtime/clk_wiz_100M_to_400M_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_booster' (3#1) [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/new/clk_booster.v:22]
+INFO: [Synth 8-6157] synthesizing module 'structre_A' [D:/Neurostimulation/board_test_programmable_A_with_ethernet_mannul_channel_change/board_test_programmable_A_with_ethernet.srcs/sources_1/new/structre_A.v:24]
+INFO: [Synth 8-6157] synthesizing module 'programmable_3_phase_clock' [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/programmable_3_phase_clock.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'programmable_3_phase_clock' (4#1) [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/programmable_3_phase_clock.v:24]
+INFO: [Synth 8-6157] synthesizing module 'CLK_LATCH_generator' [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/CLK_LATCH_A_generator.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'CLK_LATCH_generator' (5#1) [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/CLK_LATCH_A_generator.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CLK_CH_generator' [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/CLK_CH_A_generator.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'CLK_CH_generator' (6#1) [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/CLK_CH_A_generator.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CLK_D_generator' [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/CLK_D_A_generator.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'CLK_D_generator' (7#1) [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/CLK_D_A_generator.v:23]
+WARNING: [Synth 8-567] referenced signal 'start' should be on the sensitivity list [D:/Neurostimulation/board_test_programmable_A_with_ethernet_mannul_channel_change/board_test_programmable_A_with_ethernet.srcs/sources_1/new/structre_A.v:140]
+WARNING: [Synth 8-567] referenced signal 'CH_counter' should be on the sensitivity list [D:/Neurostimulation/board_test_programmable_A_with_ethernet_mannul_channel_change/board_test_programmable_A_with_ethernet.srcs/sources_1/new/structre_A.v:140]
+WARNING: [Synth 8-567] referenced signal 'posedge_boosted_clk_counter' should be on the sensitivity list [D:/Neurostimulation/board_test_programmable_A_with_ethernet_mannul_channel_change/board_test_programmable_A_with_ethernet.srcs/sources_1/new/structre_A.v:140]
+WARNING: [Synth 8-6014] Unused sequential element CH_counter_reg was removed.  [D:/Neurostimulation/board_test_programmable_A_with_ethernet_mannul_channel_change/board_test_programmable_A_with_ethernet.srcs/sources_1/new/structre_A.v:130]
+INFO: [Synth 8-6155] done synthesizing module 'structre_A' (8#1) [D:/Neurostimulation/board_test_programmable_A_with_ethernet_mannul_channel_change/board_test_programmable_A_with_ethernet.srcs/sources_1/new/structre_A.v:24]
+INFO: [Synth 8-6157] synthesizing module 'structre_B' [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/structure_B.v:21]
+INFO: [Synth 8-6157] synthesizing module 'two_phase_generator' [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/two_phase_generator.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'two_phase_generator' (9#1) [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/two_phase_generator.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'structre_B' (10#1) [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/structure_B.v:21]
+WARNING: [Synth 8-3848] Net channel_change_clk in module/entity structure_clocks does not have driver. [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/structure_clocks.v:279]
+INFO: [Synth 8-6155] done synthesizing module 'structure_clocks' (11#1) [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/structure_clocks.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dac_reset' [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/dac_reset.v:23]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/dac_reset.v:181]
+INFO: [Synth 8-6155] done synthesizing module 'dac_reset' (12#1) [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/dac_reset.v:23]
+WARNING: [Synth 8-6014] Unused sequential element shift_reg_reg was removed.  [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/starter_ABC.v:149]
+WARNING: [Synth 8-6014] Unused sequential element parallel_reg was removed.  [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/starter_ABC.v:188]
+WARNING: [Synth 8-6014] Unused sequential element spi_loadctivator_reg was removed.  [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/starter_ABC.v:191]
+WARNING: [Synth 8-6014] Unused sequential element spi_load_stemctivator_reg was removed.  [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/starter_ABC.v:192]
+WARNING: [Synth 8-6014] Unused sequential element set_up_start_reg was removed.  [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/starter_ABC.v:194]
+WARNING: [Synth 8-6014] Unused sequential element seeker_reg was removed.  [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/starter_ABC.v:200]
+WARNING: [Synth 8-3848] Net PHI3 in module/entity starterBC does not have driver. [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/starter_ABC.v:69]
+WARNING: [Synth 8-3848] Net channel_change_serial_signal in module/entity starterBC does not have driver. [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/starter_ABC.v:367]
+WARNING: [Synth 8-3848] Net serial in module/entity starterBC does not have driver. [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/starter_ABC.v:368]
+WARNING: [Synth 8-3848] Net channel_change_ready in module/entity starterBC does not have driver. [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/starter_ABC.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'starterBC' (13#1) [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/starter_ABC.v:33]
+INFO: [Synth 8-6157] synthesizing module 'SPI_template' [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/new/SPI.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SPI_template' (14#1) [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/new/SPI.v:23]
+WARNING: [Synth 8-689] width (12) of port connection 'serial' does not match port width (1) of module 'SPI_template' [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/board_test.v:163]
+INFO: [Synth 8-638] synthesizing module 'gigabit_test' [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/imports/hdl/gigabit_test.vhd:47]
+INFO: [Synth 8-3491] module 'byte_data' declared at 'D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/imports/hdl/byte_data.vhd:13' bound to instance 'data' of component 'byte_data' [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/imports/hdl/gigabit_test.vhd:223]
+INFO: [Synth 8-638] synthesizing module 'byte_data' [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/imports/hdl/byte_data.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'byte_data' (15#1) [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/imports/hdl/byte_data.vhd:27]
+INFO: [Synth 8-3491] module 'add_crc32' declared at 'D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/imports/hdl/add_crc32.vhd:14' bound to instance 'i_add_crc32' of component 'add_crc32' [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/imports/hdl/gigabit_test.vhd:235]
+INFO: [Synth 8-638] synthesizing module 'add_crc32' [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/imports/hdl/add_crc32.vhd:24]
+WARNING: [Synth 8-6014] Unused sequential element v_crc_reg was removed.  [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/imports/hdl/add_crc32.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'add_crc32' (16#1) [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/imports/hdl/add_crc32.vhd:24]
+INFO: [Synth 8-3491] module 'add_preamble' declared at 'D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/imports/hdl/add_preamble.vhd:13' bound to instance 'i_add_preamble' of component 'add_preamble' [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/imports/hdl/gigabit_test.vhd:245]
+INFO: [Synth 8-638] synthesizing module 'add_preamble' [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/imports/hdl/add_preamble.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'add_preamble' (17#1) [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/imports/hdl/add_preamble.vhd:23]
+INFO: [Synth 8-3491] module 'rgmii_tx' declared at 'D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/imports/hdl/rgmii_tx.vhd:29' bound to instance 'i_rgmii_tx' of component 'rgmii_tx' [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/imports/hdl/gigabit_test.vhd:254]
+INFO: [Synth 8-638] synthesizing module 'rgmii_tx' [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/imports/hdl/rgmii_tx.vhd:45]
+INFO: [Synth 8-5534] Detected attribute (* iob = "TRUE" *) [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/imports/hdl/rgmii_tx.vhd:54]
+INFO: [Synth 8-5534] Detected attribute (* iob = "TRUE" *) [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/imports/hdl/rgmii_tx.vhd:55]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'tx_d0' to cell 'ODDR' [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/imports/hdl/rgmii_tx.vhd:154]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'tx_d1' to cell 'ODDR' [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/imports/hdl/rgmii_tx.vhd:156]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'tx_d2' to cell 'ODDR' [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/imports/hdl/rgmii_tx.vhd:158]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'tx_d3' to cell 'ODDR' [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/imports/hdl/rgmii_tx.vhd:160]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'tx_ctl' to cell 'ODDR' [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/imports/hdl/rgmii_tx.vhd:162]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'tx_c' to cell 'ODDR' [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/imports/hdl/rgmii_tx.vhd:165]
+INFO: [Synth 8-256] done synthesizing module 'rgmii_tx' (18#1) [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/imports/hdl/rgmii_tx.vhd:45]
+INFO: [Synth 8-3491] module 'rgmii_rx' declared at 'D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/imports/hdl/rgmii_rx.vhd:31' bound to instance 'i_rgmii_rx' of component 'rgmii_rx' [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/imports/hdl/gigabit_test.vhd:284]
+INFO: [Synth 8-638] synthesizing module 'rgmii_rx' [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/imports/hdl/rgmii_rx.vhd:47]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE_PIPELINED - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'ddr_rx_ctl' to cell 'IDDR' [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/imports/hdl/rgmii_rx.vhd:76]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE_PIPELINED - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'ddr_rxd0' to cell 'IDDR' [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/imports/hdl/rgmii_rx.vhd:78]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE_PIPELINED - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'ddr_rxd1' to cell 'IDDR' [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/imports/hdl/rgmii_rx.vhd:80]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE_PIPELINED - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'ddr_rxd2' to cell 'IDDR' [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/imports/hdl/rgmii_rx.vhd:82]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE_PIPELINED - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'ddr_rxd3' to cell 'IDDR' [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/imports/hdl/rgmii_rx.vhd:84]
+WARNING: [Synth 8-3848] Net data_enable in module/entity rgmii_rx does not have driver. [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/imports/hdl/rgmii_rx.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'rgmii_rx' (19#1) [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/imports/hdl/rgmii_rx.vhd:47]
+INFO: [Synth 8-113] binding component instance 'bufg_100' to cell 'BUFG' [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/imports/hdl/gigabit_test.vhd:362]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT bound to: 10 - type: integer 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE bound to: 8 - type: integer 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_DIVIDE bound to: 20 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_DIVIDE bound to: 40 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_DIVIDE bound to: 8 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: -270.000000 - type: float 
+	Parameter CLKOUT4_DIVIDE bound to: 16 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_DIVIDE bound to: 16 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter REF_JITTER1 bound to: 0.000000 - type: float 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-113] binding component instance 'clocking' to cell 'PLLE2_BASE' [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/imports/hdl/gigabit_test.vhd:371]
+WARNING: [Synth 8-6014] Unused sequential element phy_ready_reg was removed.  [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/imports/hdl/gigabit_test.vhd:278]
+WARNING: [Synth 8-6014] Unused sequential element data_temp_0_reg was removed.  [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/imports/hdl/gigabit_test.vhd:309]
+WARNING: [Synth 8-6014] Unused sequential element test_flag_reg was removed.  [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/imports/hdl/gigabit_test.vhd:318]
+WARNING: [Synth 8-6014] Unused sequential element rx_counter_reg was removed.  [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/imports/hdl/gigabit_test.vhd:321]
+INFO: [Synth 8-256] done synthesizing module 'gigabit_test' (20#1) [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/imports/hdl/gigabit_test.vhd:47]
+WARNING: [Synth 8-689] width (1) of port connection 'leds' does not match port width (4) of module 'gigabit_test' [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/board_test.v:191]
+WARNING: [Synth 8-689] width (5) of port connection 'rx_fully_framed' does not match port width (8) of module 'gigabit_test' [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/board_test.v:208]
+WARNING: [Synth 8-6014] Unused sequential element temp_1_reg was removed.  [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/board_test.v:149]
+WARNING: [Synth 8-6014] Unused sequential element temp_2_reg was removed.  [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/board_test.v:150]
+WARNING: [Synth 8-3848] Net SDI in module/entity board_testBC does not have driver. [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/board_test.v:186]
+WARNING: [Synth 8-3848] Net SYNC_bar in module/entity board_testBC does not have driver. [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/board_test.v:186]
+WARNING: [Synth 8-3848] Net LDAC_bar in module/entity board_testBC does not have driver. [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/board_test.v:186]
+WARNING: [Synth 8-3848] Net SCLK in module/entity board_testBC does not have driver. [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/board_test.v:186]
+WARNING: [Synth 8-3848] Net CLEAR_bar in module/entity board_testBC does not have driver. [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/board_test.v:186]
+WARNING: [Synth 8-3848] Net structure_select in module/entity board_testBC does not have driver. [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/board_test.v:88]
+INFO: [Synth 8-6155] done synthesizing module 'board_testBC' (21#1) [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/board_test.v:22]
+WARNING: [Synth 8-3331] design rgmii_rx has unconnected port data_enable
+WARNING: [Synth 8-3331] design rgmii_rx has unconnected port rx_data_try[3]
+WARNING: [Synth 8-3331] design rgmii_rx has unconnected port rx_data_try[2]
+WARNING: [Synth 8-3331] design rgmii_rx has unconnected port rx_data_try[1]
+WARNING: [Synth 8-3331] design rgmii_rx has unconnected port rx_data_try[0]
+WARNING: [Synth 8-3331] design gigabit_test has unconnected port eth_mdio
+WARNING: [Synth 8-3331] design gigabit_test has unconnected port switches_try[4]
+WARNING: [Synth 8-3331] design gigabit_test has unconnected port udp_control
+WARNING: [Synth 8-3331] design gigabit_test has unconnected port eth_int_b
+WARNING: [Synth 8-3331] design gigabit_test has unconnected port eth_pme_b
+WARNING: [Synth 8-3331] design CLK_D_generator has unconnected port CLK_D_pulse_width[9]
+WARNING: [Synth 8-3331] design CLK_D_generator has unconnected port CLK_D_pulse_width[8]
+WARNING: [Synth 8-3331] design CLK_D_generator has unconnected port CLK_D_pulse_width[7]
+WARNING: [Synth 8-3331] design CLK_D_generator has unconnected port CLK_D_pulse_width[6]
+WARNING: [Synth 8-3331] design CLK_D_generator has unconnected port CLK_D_pulse_width[5]
+WARNING: [Synth 8-3331] design CLK_D_generator has unconnected port CLK_D_pulse_width[4]
+WARNING: [Synth 8-3331] design CLK_D_generator has unconnected port CLK_D_pulse_width[3]
+WARNING: [Synth 8-3331] design CLK_D_generator has unconnected port CLK_D_pulse_width[2]
+WARNING: [Synth 8-3331] design CLK_D_generator has unconnected port CLK_D_pulse_width[1]
+WARNING: [Synth 8-3331] design CLK_D_generator has unconnected port CLK_D_pulse_width[0]
+WARNING: [Synth 8-3331] design structre_B has unconnected port locked
+WARNING: [Synth 8-3331] design structre_B has unconnected port total_posedge_count[9]
+WARNING: [Synth 8-3331] design structre_B has unconnected port total_posedge_count[8]
+WARNING: [Synth 8-3331] design structre_B has unconnected port total_posedge_count[7]
+WARNING: [Synth 8-3331] design structre_B has unconnected port total_posedge_count[6]
+WARNING: [Synth 8-3331] design structre_B has unconnected port total_posedge_count[5]
+WARNING: [Synth 8-3331] design structre_B has unconnected port total_posedge_count[4]
+WARNING: [Synth 8-3331] design structre_B has unconnected port total_posedge_count[3]
+WARNING: [Synth 8-3331] design structre_B has unconnected port total_posedge_count[2]
+WARNING: [Synth 8-3331] design structre_B has unconnected port total_posedge_count[1]
+WARNING: [Synth 8-3331] design structre_B has unconnected port total_posedge_count[0]
+WARNING: [Synth 8-3331] design structre_A has unconnected port locked
+WARNING: [Synth 8-3331] design structure_clocks has unconnected port channel_change_clk
+WARNING: [Synth 8-3331] design structure_clocks has unconnected port structure_select[2]
+WARNING: [Synth 8-3331] design structure_clocks has unconnected port structure_select[1]
+WARNING: [Synth 8-3331] design structure_clocks has unconnected port structure_select[0]
+WARNING: [Synth 8-3331] design structure_clocks has unconnected port PHI3_flag
+WARNING: [Synth 8-3331] design starterBC has unconnected port PHI3
+WARNING: [Synth 8-3331] design starterBC has unconnected port spi_clk_out
+WARNING: [Synth 8-3331] design starterBC has unconnected port channel_change_ready
+WARNING: [Synth 8-3331] design starterBC has unconnected port mannul_change
+WARNING: [Synth 8-3331] design board_testBC has unconnected port state_indicator[6]
+WARNING: [Synth 8-3331] design board_testBC has unconnected port SDI
+WARNING: [Synth 8-3331] design board_testBC has unconnected port SYNC_bar
+WARNING: [Synth 8-3331] design board_testBC has unconnected port LDAC_bar
+WARNING: [Synth 8-3331] design board_testBC has unconnected port SCLK
+WARNING: [Synth 8-3331] design board_testBC has unconnected port CLEAR_bar
+WARNING: [Synth 8-3331] design board_testBC has unconnected port D_bar
+WARNING: [Synth 8-3331] design board_testBC has unconnected port xa_p[3]
+WARNING: [Synth 8-3331] design board_testBC has unconnected port xa_p[2]
+WARNING: [Synth 8-3331] design board_testBC has unconnected port xa_p[1]
+WARNING: [Synth 8-3331] design board_testBC has unconnected port xa_p[0]
+WARNING: [Synth 8-3331] design board_testBC has unconnected port xa_n[3]
+WARNING: [Synth 8-3331] design board_testBC has unconnected port xa_n[2]
+WARNING: [Synth 8-3331] design board_testBC has unconnected port xa_n[1]
+WARNING: [Synth 8-3331] design board_testBC has unconnected port xa_n[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 447.441 ; gain = 157.277
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin generatorBC:structure_select[2] to constant 0 [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/board_test.v:119]
+WARNING: [Synth 8-3295] tying undriven pin generatorBC:structure_select[1] to constant 0 [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/board_test.v:119]
+WARNING: [Synth 8-3295] tying undriven pin generatorBC:structure_select[0] to constant 0 [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/board_test.v:119]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 447.441 ; gain = 157.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 447.441 ; gain = 157.277
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a200tsbg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/ip/clk_wiz_100M_to_400M/clk_wiz_100M_to_400M/clk_wiz_100M_to_400M_in_context.xdc] for cell 'generatorBC/generator/high_f_clk1/bost1'
+Finished Parsing XDC File [d:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/ip/clk_wiz_100M_to_400M/clk_wiz_100M_to_400M/clk_wiz_100M_to_400M_in_context.xdc] for cell 'generatorBC/generator/high_f_clk1/bost1'
+Parsing XDC File [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/constrs_1/new/board_test.xdc]
+WARNING: [Vivado 12-507] No nets matched 'start_ethernet_IBUF'. [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/constrs_1/new/board_test.xdc:10]
+WARNING: [Vivado 12-507] No nets matched 'start_IBUF'. [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/constrs_1/new/board_test.xdc:31]
+WARNING: [Vivado 12-584] No ports matched 'PHI3_A'. [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/constrs_1/new/board_test.xdc:47]
+Finished Parsing XDC File [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/constrs_1/new/board_test.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/constrs_1/new/board_test.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/board_testBC_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/constrs_1/new/board_test.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/board_testBC_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/board_testBC_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  PLLE2_BASE => PLLE2_ADV: 1 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 850.145 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 850.145 ; gain = 559.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tsbg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 850.145 ; gain = 559.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clk_100M. (constraint file  {d:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/ip/clk_wiz_100M_to_400M/clk_wiz_100M_to_400M/clk_wiz_100M_to_400M_in_context.xdc}, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clk_100M. (constraint file  {d:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/ip/clk_wiz_100M_to_400M/clk_wiz_100M_to_400M/clk_wiz_100M_to_400M_in_context.xdc}, line 4).
+Applied set_property DONT_TOUCH = true for generatorBC/generator/high_f_clk1/bost1. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 850.145 ; gain = 559.980
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "done" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "done" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "done" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "load" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "temp" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "total_posedge_count" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "total_posedge_count_2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "shift_control" won't be mapped to RAM because address size (29) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "SCLK" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "temp_shift" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "generator_start" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "set_up_start_stem" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dac_reset" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dac_setup" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "addr_delay" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "i" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "temp" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "data_valid" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_user" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "busy" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "doutclk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "doutclk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "doutctl" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "link_10mb" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "link_100mb" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "link_1000mb" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "adv_data" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:38 . Memory (MB): peak = 850.145 ; gain = 559.980
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'generatorBC/generator/testA/CH_A' (CLK_CH_generator) to 'generatorBC/generator/testA/DEC_A'
+INFO: [Synth 8-223] decloning instance 'generatorBC/generator/testB/CH_B' (CLK_CH_generator) to 'generatorBC/generator/testB/DEC_B'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 7     
+	   3 Input     32 Bit       Adders := 3     
+	   3 Input     20 Bit       Adders := 3     
+	   2 Input     20 Bit       Adders := 4     
+	   3 Input     17 Bit       Adders := 4     
+	   3 Input     12 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 3     
+	   3 Input     10 Bit       Adders := 12    
+	   2 Input     10 Bit       Adders := 9     
+	   2 Input      9 Bit       Adders := 3     
+	   2 Input      7 Bit       Adders := 10    
+	   2 Input      6 Bit       Adders := 3     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 8     
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 3     
+	               27 Bit    Registers := 1     
+	               24 Bit    Registers := 2     
+	               20 Bit    Registers := 3     
+	               16 Bit    Registers := 1     
+	               15 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	               12 Bit    Registers := 3     
+	               10 Bit    Registers := 8     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 7     
+	                7 Bit    Registers := 5     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 80    
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 10    
+	   8 Input     20 Bit        Muxes := 1     
+	   4 Input     19 Bit        Muxes := 1     
+	   8 Input     16 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 3     
+	   2 Input     13 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 3     
+	  49 Input     12 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 6     
+	   4 Input     10 Bit        Muxes := 2     
+	   4 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 11    
+	  49 Input      8 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 3     
+	   4 Input      7 Bit        Muxes := 1     
+	   8 Input      6 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 8     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 77    
+	  27 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 16    
+	   4 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 1     
+	  49 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module board_testBC 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+Module PSI_stem 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               15 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 7     
+Module programmable_3_phase_clock 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     10 Bit       Adders := 6     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module CLK_LATCH_generator 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     10 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module CLK_CH_generator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module CLK_D_generator 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module two_phase_generator 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     20 Bit       Adders := 3     
+	   2 Input     20 Bit       Adders := 2     
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module structure_clocks 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 3     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     20 Bit       Adders := 1     
+	   3 Input     17 Bit       Adders := 4     
+	   3 Input     12 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               20 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   4 Input     19 Bit        Muxes := 1     
+	   4 Input      9 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 19    
+	  27 Input      1 Bit        Muxes := 1     
+Module dac_reset 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   4 Input     10 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 11    
+Module starterBC 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 2     
+	               20 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 16    
++---Muxes : 
+	   8 Input     20 Bit        Muxes := 1     
+	   8 Input     16 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 2     
+	   8 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   8 Input      1 Bit        Muxes := 16    
+	   4 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module SPI_template 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module byte_data 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	  49 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	  49 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	  49 Input      1 Bit        Muxes := 4     
+Module add_crc32 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 8     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 9     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module add_preamble 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module rgmii_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 5     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 3     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 8     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module rgmii_rx 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   4 Input      1 Bit        Muxes := 4     
+Module gigabit_test 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               27 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   4 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'set_up_delay_done_reg' into 'set_up_delay_done_reg' [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/starter_ABC.v:196]
+INFO: [Synth 8-4471] merging register 'addr_delay_reg' into 'addr_delay_reg' [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/starter_ABC.v:247]
+INFO: [Synth 8-4471] merging register 'set_up_delay_done_reg' into 'set_up_delay_done_reg' [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/starter_ABC.v:196]
+INFO: [Synth 8-4471] merging register 'addr_delay_reg' into 'addr_delay_reg' [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/starter_ABC.v:247]
+INFO: [Synth 8-4471] merging register 'set_up_done_reg' into 'set_up_done_reg' [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/starter_ABC.v:232]
+WARNING: [Synth 8-6014] Unused sequential element full_reset/chip_shift_control_reg was removed.  [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/dac_reset.v:94]
+WARNING: [Synth 8-6014] Unused sequential element full_reset/SH1_WR0_reg was removed.  [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/dac_reset.v:114]
+WARNING: [Synth 8-6014] Unused sequential element full_reset/check_reg was removed.  [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/dac_reset.v:43]
+WARNING: [Synth 8-6014] Unused sequential element control_register_setup/chip_shift_control_reg was removed.  [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/dac_reset.v:94]
+WARNING: [Synth 8-6014] Unused sequential element control_register_setup/SH1_WR0_reg was removed.  [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/dac_reset.v:114]
+WARNING: [Synth 8-6014] Unused sequential element control_register_setup/check_reg was removed.  [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/dac_reset.v:43]
+WARNING: [Synth 8-6014] Unused sequential element set_up_done_reg was removed.  [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/starter_ABC.v:232]
+WARNING: [Synth 8-6014] Unused sequential element set_up_delay_done_reg was removed.  [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/starter_ABC.v:196]
+WARNING: [Synth 8-6014] Unused sequential element addr_delay_reg was removed.  [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/starter_ABC.v:247]
+WARNING: [Synth 8-6014] Unused sequential element set_up_delay_done_reg was removed.  [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/starter_ABC.v:196]
+WARNING: [Synth 8-6014] Unused sequential element addr_delay_reg was removed.  [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/new/starter_ABC.v:247]
+INFO: [Synth 8-5546] ROM "full_reset/temp_shift" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "full_reset/shift_control" won't be mapped to RAM because address size (29) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "full_reset/SCLK" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "control_register_setup/temp_shift" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "control_register_setup/shift_control" won't be mapped to RAM because address size (29) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "control_register_setup/SCLK" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "addr_delay" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "generator_start" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "set_up_start_stem" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dac_setup" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dac_reset" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "done" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "temp" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "done" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "load" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "done" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+DSP Report: Generating DSP PHI_B/PHI1_first_center_offset0, operation Mode is: A*(B:0x13).
+DSP Report: operator PHI_B/PHI1_first_center_offset0 is absorbed into DSP PHI_B/PHI1_first_center_offset0.
+INFO: [Synth 8-5546] ROM "addr_delay" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "generator_start" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dac_setup" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dac_reset" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "control_register_setup/SCLK" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "full_reset/SCLK" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "full_reset/shift_control" won't be mapped to RAM because address size (29) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "full_reset/temp_shift" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "control_register_setup/shift_control" won't be mapped to RAM because address size (29) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "control_register_setup/temp_shift" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "set_up_start_stem" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element D_recorder_2/i_reg was removed.  [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/new/SPI.v:39]
+WARNING: [Synth 8-6014] Unused sequential element D_recorder_2/temp_reg was removed.  [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/new/SPI.v:40]
+WARNING: [Synth 8-6014] Unused sequential element D_recorder_2/parallel_reg was removed.  [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/new/SPI.v:47]
+WARNING: [Synth 8-6014] Unused sequential element nolabel_line189/data/busy_reg was removed.  [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/imports/hdl/byte_data.vhd:230]
+WARNING: [Synth 8-6014] Unused sequential element nolabel_line189/data/packet_start_reg was removed.  [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/imports/hdl/byte_data.vhd:109]
+WARNING: [Synth 8-6014] Unused sequential element nolabel_line189/i_rgmii_rx/link_full_duplex_reg was removed.  [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/imports/hdl/rgmii_rx.vhd:112]
+WARNING: [Synth 8-6014] Unused sequential element nolabel_line189/i_rgmii_rx/data_reg was removed.  [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/imports/hdl/rgmii_rx.vhd:96]
+WARNING: [Synth 8-6014] Unused sequential element nolabel_line189/i_rgmii_rx/data_valid_reg was removed.  [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/imports/hdl/rgmii_rx.vhd:93]
+WARNING: [Synth 8-6014] Unused sequential element nolabel_line189/i_rgmii_rx/data_error_reg was removed.  [D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/imports/hdl/rgmii_rx.vhd:94]
+INFO: [Synth 8-5546] ROM "nolabel_line189/data/busy" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "nolabel_line189/data/data_user" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "nolabel_line189/data/data_valid" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "nolabel_line189/adv_data" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3917] design board_testBC has port eth_mdc driven by constant 0
+WARNING: [Synth 8-3331] design structre_B has unconnected port locked
+WARNING: [Synth 8-3331] design structre_B has unconnected port total_posedge_count[9]
+WARNING: [Synth 8-3331] design structre_B has unconnected port total_posedge_count[8]
+WARNING: [Synth 8-3331] design structre_B has unconnected port total_posedge_count[7]
+WARNING: [Synth 8-3331] design structre_B has unconnected port total_posedge_count[6]
+WARNING: [Synth 8-3331] design structre_B has unconnected port total_posedge_count[5]
+WARNING: [Synth 8-3331] design structre_B has unconnected port total_posedge_count[4]
+WARNING: [Synth 8-3331] design structre_B has unconnected port total_posedge_count[3]
+WARNING: [Synth 8-3331] design structre_B has unconnected port total_posedge_count[2]
+WARNING: [Synth 8-3331] design structre_B has unconnected port total_posedge_count[1]
+WARNING: [Synth 8-3331] design structre_B has unconnected port total_posedge_count[0]
+WARNING: [Synth 8-3331] design structre_B has unconnected port CLK_D_B_pulse_width[9]
+WARNING: [Synth 8-3331] design structre_B has unconnected port CLK_D_B_pulse_width[8]
+WARNING: [Synth 8-3331] design structre_B has unconnected port CLK_D_B_pulse_width[7]
+WARNING: [Synth 8-3331] design structre_B has unconnected port CLK_D_B_pulse_width[6]
+WARNING: [Synth 8-3331] design structre_B has unconnected port CLK_D_B_pulse_width[5]
+WARNING: [Synth 8-3331] design structre_B has unconnected port CLK_D_B_pulse_width[4]
+WARNING: [Synth 8-3331] design structre_B has unconnected port CLK_D_B_pulse_width[3]
+WARNING: [Synth 8-3331] design structre_B has unconnected port CLK_D_B_pulse_width[2]
+WARNING: [Synth 8-3331] design structre_B has unconnected port CLK_D_B_pulse_width[1]
+WARNING: [Synth 8-3331] design structre_B has unconnected port CLK_D_B_pulse_width[0]
+WARNING: [Synth 8-3331] design structre_A has unconnected port locked
+WARNING: [Synth 8-3331] design structre_A has unconnected port CLK_D_A_pulse_width[9]
+WARNING: [Synth 8-3331] design structre_A has unconnected port CLK_D_A_pulse_width[8]
+WARNING: [Synth 8-3331] design structre_A has unconnected port CLK_D_A_pulse_width[7]
+WARNING: [Synth 8-3331] design structre_A has unconnected port CLK_D_A_pulse_width[6]
+WARNING: [Synth 8-3331] design structre_A has unconnected port CLK_D_A_pulse_width[5]
+WARNING: [Synth 8-3331] design structre_A has unconnected port CLK_D_A_pulse_width[4]
+WARNING: [Synth 8-3331] design structre_A has unconnected port CLK_D_A_pulse_width[3]
+WARNING: [Synth 8-3331] design structre_A has unconnected port CLK_D_A_pulse_width[2]
+WARNING: [Synth 8-3331] design structre_A has unconnected port CLK_D_A_pulse_width[1]
+WARNING: [Synth 8-3331] design structre_A has unconnected port CLK_D_A_pulse_width[0]
+WARNING: [Synth 8-3331] design structure_clocks has unconnected port channel_change_clk
+WARNING: [Synth 8-3331] design structure_clocks has unconnected port structure_select[2]
+WARNING: [Synth 8-3331] design structure_clocks has unconnected port structure_select[1]
+WARNING: [Synth 8-3331] design structure_clocks has unconnected port structure_select[0]
+WARNING: [Synth 8-3331] design structure_clocks has unconnected port PHI3_flag
+WARNING: [Synth 8-3331] design starterBC has unconnected port PHI3
+WARNING: [Synth 8-3331] design starterBC has unconnected port spi_clk_out
+WARNING: [Synth 8-3331] design starterBC has unconnected port channel_change_ready
+WARNING: [Synth 8-3331] design starterBC has unconnected port mannul_change
+WARNING: [Synth 8-3331] design board_testBC has unconnected port state_indicator[6]
+WARNING: [Synth 8-3331] design board_testBC has unconnected port SDI
+WARNING: [Synth 8-3331] design board_testBC has unconnected port SYNC_bar
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'generatorBC/parallel_stem_reg[13]' (FDE) to 'generatorBC/parallel_stem_reg[12]'
+INFO: [Synth 8-3886] merging instance 'generatorBC/parallel_stem_reg[12]' (FDE) to 'generatorBC/parallel_stem_reg[11]'
+INFO: [Synth 8-3886] merging instance 'generatorBC/ethernet_out_reg[13]' (FDE) to 'generatorBC/ethernet_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'generatorBC/ethernet_out_reg[14]' (FDE) to 'generatorBC/ethernet_out_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\generatorBC/ethernet_out_reg[15] )
+INFO: [Synth 8-3886] merging instance 'generatorBC/parallel_stem_reg[11]' (FDE) to 'generatorBC/parallel_stem_reg[10]'
+INFO: [Synth 8-3886] merging instance 'generatorBC/parallel_stem_reg[10]' (FDE) to 'generatorBC/parallel_stem_reg[9]'
+INFO: [Synth 8-3886] merging instance 'generatorBC/parallel_stem_reg[9]' (FDE) to 'generatorBC/parallel_stem_reg[8]'
+INFO: [Synth 8-3886] merging instance 'generatorBC/parallel_stem_reg[8]' (FDE) to 'generatorBC/parallel_stem_reg[7]'
+INFO: [Synth 8-3886] merging instance 'generatorBC/parallel_stem_reg[7]' (FDE) to 'generatorBC/parallel_stem_reg[6]'
+INFO: [Synth 8-3886] merging instance 'generatorBC/parallel_stem_reg[6]' (FDE) to 'generatorBC/parallel_stem_reg[5]'
+INFO: [Synth 8-3886] merging instance 'generatorBC/parallel_stem_reg[5]' (FDE) to 'generatorBC/parallel_stem_reg[4]'
+INFO: [Synth 8-3886] merging instance 'generatorBC/parallel_stem_reg[4]' (FDE) to 'generatorBC/parallel_stem_reg[3]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line189/max_count_reg[24]' (FD) to 'nolabel_line189/max_count_reg[25]'
+INFO: [Synth 8-3886] merging instance 'generatorBC/parallel_stem_reg[3]' (FDE) to 'generatorBC/parallel_stem_reg[2]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\nolabel_line189/i_rgmii_tx/tx_ready_meta_reg )
+INFO: [Synth 8-3886] merging instance 'generatorBC/parallel_stem_reg[2]' (FDE) to 'generatorBC/parallel_stem_reg[1]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line189/i_rgmii_tx/tx_ready_reg' (FD) to 'nolabel_line189/i_rgmii_tx/tx_ready_meta_reg'
+INFO: [Synth 8-3886] merging instance 'generatorBC/parallel_stem_reg[1]' (FDE) to 'generatorBC/parallel_stem_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nolabel_line189/i_rgmii_tx/hold_error_reg )
+INFO: [Synth 8-3886] merging instance 'nolabel_line189/i_rgmii_tx/second_quarter_reg[1]' (FD) to 'nolabel_line189/i_rgmii_tx/first_quarter_reg[0]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line189/i_rgmii_tx/second_quarter_reg[2]' (FD) to 'nolabel_line189/i_rgmii_tx/first_quarter_reg[1]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line189/i_rgmii_tx/second_quarter_reg[3]' (FD) to 'nolabel_line189/i_rgmii_tx/first_quarter_reg[2]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line189/i_rgmii_tx/second_quarter_reg[4]' (FD) to 'nolabel_line189/i_rgmii_tx/first_quarter_reg[3]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line189/i_rgmii_tx/second_quarter_reg[5]' (FD) to 'nolabel_line189/i_rgmii_tx/first_quarter_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\generatorBC/parallel_stem_reg[0] )
+INFO: [Synth 8-3886] merging instance 'generatorBC/generator/total_posedge_count_2_reg[0]' (FDE) to 'generatorBC/generator/total_posedge_count_2_reg[1]'
+INFO: [Synth 8-3886] merging instance 'generatorBC/temp_clk_counter_reg[11]' (FDR) to 'generatorBC/temp_clk_counter_reg[9]'
+INFO: [Synth 8-3886] merging instance 'generatorBC/temp_clk_counter_reg[12]' (FDR) to 'generatorBC/temp_clk_counter_reg[9]'
+INFO: [Synth 8-3886] merging instance 'generatorBC/temp_clk_counter_reg[13]' (FDR) to 'generatorBC/temp_clk_counter_reg[9]'
+INFO: [Synth 8-3886] merging instance 'generatorBC/temp_clk_counter_reg[10]' (FDR) to 'generatorBC/temp_clk_counter_reg[9]'
+INFO: [Synth 8-3886] merging instance 'generatorBC/temp_clk_counter_reg[9]' (FDR) to 'generatorBC/temp_clk_counter_reg[14]'
+INFO: [Synth 8-3886] merging instance 'generatorBC/temp_clk_counter_reg[17]' (FDR) to 'generatorBC/temp_clk_counter_reg[14]'
+INFO: [Synth 8-3886] merging instance 'generatorBC/temp_clk_counter_reg[19]' (FDR) to 'generatorBC/temp_clk_counter_reg[14]'
+INFO: [Synth 8-3886] merging instance 'generatorBC/temp_clk_counter_reg[18]' (FDR) to 'generatorBC/temp_clk_counter_reg[14]'
+INFO: [Synth 8-3886] merging instance 'generatorBC/temp_clk_counter_reg[16]' (FDR) to 'generatorBC/temp_clk_counter_reg[14]'
+INFO: [Synth 8-3886] merging instance 'generatorBC/temp_clk_counter_reg[14]' (FDR) to 'generatorBC/temp_clk_counter_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\generatorBC/temp_clk_counter_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\generatorBC/state_reg[6] )
+INFO: [Synth 8-3886] merging instance 'generatorBC/generator/total_posedge_count_2_reg[1]' (FDE) to 'generatorBC/generator/total_posedge_count_2_reg[2]'
+INFO: [Synth 8-3886] merging instance 'generatorBC/generator/total_posedge_count_2_reg[2]' (FDE) to 'generatorBC/generator/total_posedge_count_2_reg[3]'
+INFO: [Synth 8-3886] merging instance 'generatorBC/generator/total_posedge_count_2_reg[3]' (FDE) to 'generatorBC/generator/total_posedge_count_2_reg[4]'
+INFO: [Synth 8-3886] merging instance 'generatorBC/generator/total_posedge_count_2_reg[4]' (FDE) to 'generatorBC/generator/total_posedge_count_2_reg[13]'
+INFO: [Synth 8-3886] merging instance 'generatorBC/generator/total_posedge_count_2_reg[5]' (FDE) to 'generatorBC/generator/total_posedge_count_2_reg[8]'
+INFO: [Synth 8-3886] merging instance 'generatorBC/generator/total_posedge_count_2_reg[6]' (FDE) to 'generatorBC/generator/total_posedge_count_2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'generatorBC/generator/total_posedge_count_2_reg[13]' (FDE) to 'generatorBC/generator/total_posedge_count_2_reg[14]'
+INFO: [Synth 8-3886] merging instance 'generatorBC/generator/total_posedge_count_2_reg[14]' (FDE) to 'generatorBC/generator/total_posedge_count_2_reg[16]'
+INFO: [Synth 8-3886] merging instance 'generatorBC/generator/total_posedge_count_2_reg[16]' (FDE) to 'generatorBC/generator/total_posedge_count_2_reg[19]'
+INFO: [Synth 8-3886] merging instance 'generatorBC/generator/total_posedge_count_2_reg[17]' (FDE) to 'generatorBC/generator/total_posedge_count_2_reg[18]'
+INFO: [Synth 8-3886] merging instance 'generatorBC/generator/total_posedge_count_2_reg[19]' (FDE) to 'generatorBC/generator/total_posedge_count_reg[0]'
+INFO: [Synth 8-3886] merging instance 'generatorBC/generator/total_posedge_count_reg[0]' (FDE) to 'generatorBC/generator/total_posedge_count_reg[1]'
+INFO: [Synth 8-3886] merging instance 'generatorBC/generator/total_posedge_count_reg[1]' (FDE) to 'generatorBC/generator/total_posedge_count_reg[2]'
+INFO: [Synth 8-3886] merging instance 'generatorBC/generator/total_posedge_count_reg[2]' (FDE) to 'generatorBC/generator/total_posedge_count_reg[9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\generatorBC/generator /\total_posedge_count_reg[9] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\nolabel_line189/i_rgmii_tx/tx_ready_meta_reg )
+WARNING: [Synth 8-3332] Sequential element (generatorBC/set_up_stem/temp_reg[14]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/set_up_stem/temp_reg[13]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/set_up_stem/temp_reg[12]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/set_up_stem/temp_reg[11]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/set_up_stem/temp_reg[10]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/set_up_stem/temp_reg[9]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/set_up_stem/temp_reg[8]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/set_up_stem/temp_reg[7]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/set_up_stem/temp_reg[6]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/set_up_stem/temp_reg[5]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/set_up_stem/temp_reg[4]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/set_up_stem/temp_reg[3]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/set_up_stem/temp_reg[2]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/set_up_stem/temp_reg[1]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/set_up_stem/temp_reg[0]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (PHI_A/PHI2_reg) is unused and will be removed from module structre_A.
+WARNING: [Synth 8-3332] Sequential element (PHI_A/PHI1_reg) is unused and will be removed from module structre_A.
+WARNING: [Synth 8-3332] Sequential element (PHI_A/PHI3_reg) is unused and will be removed from module structre_A.
+WARNING: [Synth 8-3332] Sequential element (LATCH_A/CLK_LATCH_reg) is unused and will be removed from module structre_A.
+WARNING: [Synth 8-3332] Sequential element (CH_A/CLK_CH_reg) is unused and will be removed from module structre_A.
+WARNING: [Synth 8-3332] Sequential element (D_A/signal_end_reg[9]) is unused and will be removed from module structre_A.
+WARNING: [Synth 8-3332] Sequential element (D_A/signal_end_reg[8]) is unused and will be removed from module structre_A.
+WARNING: [Synth 8-3332] Sequential element (D_A/signal_end_reg[7]) is unused and will be removed from module structre_A.
+WARNING: [Synth 8-3332] Sequential element (D_A/signal_end_reg[6]) is unused and will be removed from module structre_A.
+WARNING: [Synth 8-3332] Sequential element (D_A/signal_end_reg[5]) is unused and will be removed from module structre_A.
+WARNING: [Synth 8-3332] Sequential element (D_A/signal_end_reg[4]) is unused and will be removed from module structre_A.
+WARNING: [Synth 8-3332] Sequential element (D_A/signal_end_reg[3]) is unused and will be removed from module structre_A.
+WARNING: [Synth 8-3332] Sequential element (D_A/signal_end_reg[2]) is unused and will be removed from module structre_A.
+WARNING: [Synth 8-3332] Sequential element (D_A/signal_end_reg[1]) is unused and will be removed from module structre_A.
+WARNING: [Synth 8-3332] Sequential element (D_A/signal_end_reg[0]) is unused and will be removed from module structre_A.
+WARNING: [Synth 8-3332] Sequential element (D_A/CLK_D_reg) is unused and will be removed from module structre_A.
+WARNING: [Synth 8-3332] Sequential element (ready_control_reg) is unused and will be removed from module structure_clocks.
+WARNING: [Synth 8-3332] Sequential element (sampling_clk_control_reg) is unused and will be removed from module structure_clocks.
+WARNING: [Synth 8-3332] Sequential element (finished_reg) is unused and will be removed from module structure_clocks.
+WARNING: [Synth 8-3332] Sequential element (total_posedge_count_reg[9]) is unused and will be removed from module structure_clocks.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/state_reg[6]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/temp_clk_counter_reg[15]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/dac_setup_reg) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/control_register_setup/SYNC_bar_reg) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/dac_reset_reg) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/full_reset/SYNC_bar_reg) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/control_register_setup/LDAC_bar_reg) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/full_reset/LDAC_bar_reg) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/control_register_setup/SCLK_reg) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/full_reset/SCLK_reg) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/control_register_setup/CLEAR_bar_reg) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/full_reset/CLEAR_bar_reg) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/full_reset/counter3_reg[9]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/full_reset/counter3_reg[8]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/full_reset/counter3_reg[7]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/full_reset/counter3_reg[6]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/full_reset/counter3_reg[5]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/full_reset/counter3_reg[4]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/full_reset/counter3_reg[3]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/full_reset/counter3_reg[2]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/full_reset/counter3_reg[1]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/full_reset/counter3_reg[0]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/full_reset/temp_shift_reg) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/full_reset/shift_control_reg) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/full_reset/load_reg) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/temp_data_reg[23]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/temp_data_reg[22]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/temp_data_reg[21]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/temp_data_reg[20]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/temp_data_reg[19]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/temp_data_reg[18]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/temp_data_reg[17]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/temp_data_reg[16]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/temp_data_reg[15]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/temp_data_reg[14]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/temp_data_reg[13]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/temp_data_reg[12]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/temp_data_reg[11]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/temp_data_reg[10]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/temp_data_reg[9]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/temp_data_reg[8]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/temp_data_reg[7]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/temp_data_reg[6]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/temp_data_reg[5]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/temp_data_reg[4]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/temp_data_reg[3]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/temp_data_reg[2]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/temp_data_reg[1]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/temp_data_reg[0]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/control_register_setup/counter3_reg[9]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/control_register_setup/counter3_reg[8]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/control_register_setup/counter3_reg[7]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/control_register_setup/counter3_reg[6]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/control_register_setup/counter3_reg[5]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/control_register_setup/counter3_reg[4]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/control_register_setup/counter3_reg[3]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/control_register_setup/counter3_reg[2]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/control_register_setup/counter3_reg[1]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/control_register_setup/counter3_reg[0]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/control_register_setup/temp_shift_reg) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/control_register_setup/shift_control_reg) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/control_register_setup/load_reg) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/temp_data2_reg[23]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/temp_data2_reg[22]) is unused and will be removed from module board_testBC.
+WARNING: [Synth 8-3332] Sequential element (generatorBC/temp_data2_reg[21]) is unused and will be removed from module board_testBC.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:57 . Memory (MB): peak = 850.145 ; gain = 559.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++--------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name         | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|two_phase_generator | A*(B:0x13)  | 10     | 5      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++--------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'generatorBC/generator/high_f_clk1/bost1/clk_out1' to pin 'generatorBC/generator/high_f_clk1/bost1/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:07 ; elapsed = 00:01:17 . Memory (MB): peak = 882.117 ; gain = 591.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:10 ; elapsed = 00:01:20 . Memory (MB): peak = 928.098 ; gain = 637.934
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:11 ; elapsed = 00:01:21 . Memory (MB): peak = 976.867 ; gain = 686.703
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4163] Replicating register \nolabel_line189/i_rgmii_tx/doutctl_reg[1]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \nolabel_line189/i_rgmii_tx/doutctl_reg[0]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \nolabel_line189/i_rgmii_tx/dout_reg[7]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \nolabel_line189/i_rgmii_tx/dout_reg[3]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \nolabel_line189/i_rgmii_tx/dout_reg[6]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \nolabel_line189/i_rgmii_tx/dout_reg[2]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \nolabel_line189/i_rgmii_tx/dout_reg[5]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \nolabel_line189/i_rgmii_tx/dout_reg[1]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \nolabel_line189/i_rgmii_tx/dout_reg[4]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \nolabel_line189/i_rgmii_tx/dout_reg[0]  to handle IOB=TRUE attribute
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:13 ; elapsed = 00:01:22 . Memory (MB): peak = 976.867 ; gain = 686.703
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:13 ; elapsed = 00:01:22 . Memory (MB): peak = 976.867 ; gain = 686.703
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:13 ; elapsed = 00:01:23 . Memory (MB): peak = 976.867 ; gain = 686.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:13 ; elapsed = 00:01:23 . Memory (MB): peak = 976.867 ; gain = 686.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:13 ; elapsed = 00:01:23 . Memory (MB): peak = 976.867 ; gain = 686.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:13 ; elapsed = 00:01:23 . Memory (MB): peak = 976.867 ; gain = 686.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-------------+--------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name  | RTL Name                                               | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-------------+--------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|board_testBC | nolabel_line189/i_add_preamble/delay_data_valid_reg[6] | 7      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|board_testBC | nolabel_line189/i_add_preamble/delay_data_reg[63]      | 8      | 8     | NO           | NO                 | YES               | 8      | 0       | 
++-------------+--------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------+----------+
+|      |BlackBox name        |Instances |
++------+---------------------+----------+
+|1     |clk_wiz_100M_to_400M |         1|
++------+---------------------+----------+
+
+Report Cell Usage: 
++------+---------------------+------+
+|      |Cell                 |Count |
++------+---------------------+------+
+|1     |clk_wiz_100M_to_400M |     1|
+|2     |BUFG                 |     6|
+|3     |CARRY4               |   254|
+|4     |DSP48E1              |     1|
+|5     |IDDR                 |     5|
+|6     |LUT1                 |    53|
+|7     |LUT2                 |   285|
+|8     |LUT3                 |   200|
+|9     |LUT4                 |   216|
+|10    |LUT5                 |   164|
+|11    |LUT6                 |   504|
+|12    |MUXF7                |     8|
+|13    |ODDR                 |     6|
+|14    |PLLE2_BASE           |     1|
+|15    |SRL16E               |     9|
+|16    |FDRE                 |   375|
+|17    |FDSE                 |    26|
+|18    |IBUF                 |    28|
+|19    |OBUF                 |    34|
+|20    |OBUFT                |     6|
++------+---------------------+------+
+
+Report Instance Areas: 
++------+-------------------+--------------------+------+
+|      |Instance           |Module              |Cells |
++------+-------------------+--------------------+------+
+|1     |top                |                    |  2183|
+|2     |  generatorBC      |starterBC           |  1501|
+|3     |    generator      |structure_clocks    |  1254|
+|4     |      high_f_clk1  |clk_booster         |     4|
+|5     |      testB        |structre_B          |   332|
+|6     |        CH_B       |CLK_CH_generator    |    18|
+|7     |        D_B        |CLK_D_generator     |    57|
+|8     |        LATCH_B    |CLK_LATCH_generator |     7|
+|9     |        PHI_B      |two_phase_generator |   250|
+|10    |    set_up_stem    |PSI_stem            |    88|
+|11    |  nolabel_line189  |gigabit_test        |   558|
+|12    |    data           |byte_data           |   164|
+|13    |    i_add_crc32    |add_crc32           |    59|
+|14    |    i_add_preamble |add_preamble        |    49|
+|15    |    i_rgmii_rx     |rgmii_rx            |    13|
+|16    |    i_rgmii_tx     |rgmii_tx            |   100|
++------+-------------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:13 ; elapsed = 00:01:23 . Memory (MB): peak = 976.867 ; gain = 686.703
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 209 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:53 ; elapsed = 00:01:06 . Memory (MB): peak = 976.867 ; gain = 284.000
+Synthesis Optimization Complete : Time (s): cpu = 00:01:13 ; elapsed = 00:01:23 . Memory (MB): peak = 976.867 ; gain = 686.703
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 303 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  PLLE2_BASE => PLLE2_ADV: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+216 Infos, 261 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:16 ; elapsed = 00:01:27 . Memory (MB): peak = 976.867 ; gain = 698.176
+INFO: [Common 17-1381] The checkpoint 'D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.runs/synth_1/board_testBC.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file board_testBC_utilization_synth.rpt -pb board_testBC_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.117 . Memory (MB): peak = 976.867 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Aug 23 15:10:32 2018...

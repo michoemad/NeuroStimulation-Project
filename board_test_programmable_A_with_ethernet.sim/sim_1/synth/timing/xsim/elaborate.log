@@ -1,0 +1,25 @@
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xylinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto 8265e9c2de5042ea9f671e1af1ad8afd --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot starterBC_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.starterBC xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PSI_stem
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.PLLE2_ADV(CLKFBOUT_MULT=12,CLKIN...
+Compiling module xil_defaultlib.clk_wiz_100M_to_400M_clk_wiz_100...
+Compiling module xil_defaultlib.clk_wiz_100M_to_400M
+Compiling module xil_defaultlib.clk_booster
+Compiling module xil_defaultlib.programmable_3_phase_clock
+Compiling module xil_defaultlib.CLK_LATCH_generator
+Compiling module xil_defaultlib.CLK_CH_generator
+Compiling module xil_defaultlib.CLK_D_generator
+Compiling module xil_defaultlib.structre_A
+Compiling module xil_defaultlib.structure_clocks
+Compiling module xil_defaultlib.dac_reset
+Compiling module xil_defaultlib.starterBC
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot starterBC_time_synth

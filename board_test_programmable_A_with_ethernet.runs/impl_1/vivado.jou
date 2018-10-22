@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Thu Aug 23 15:10:40 2018
+# Process ID: 7520
+# Current directory: D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.runs/impl_1
+# Command line: vivado.exe -log board_testBC.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source board_testBC.tcl -notrace
+# Log file: D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.runs/impl_1/board_testBC.vdi
+# Journal file: D:/Neurostimulation/One Channel Demo/board_test_programmable_A_with_ethernet.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source board_testBC.tcl -notrace

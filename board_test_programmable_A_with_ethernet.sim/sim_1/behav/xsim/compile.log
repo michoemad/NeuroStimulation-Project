@@ -1,0 +1,49 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Kannect/board_test_programmable_A_with_ethernet_mannul_channel_change/board_test_programmable_A_with_ethernet.srcs/sources_1/ip/clk_wiz_100M_to_400M/clk_wiz_100M_to_400M_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_100M_to_400M
+INFO: [VRFC 10-311] analyzing module clk_wiz_100M_to_400M_clk_wiz_100M_to_400M_clk_wiz
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Kannect/board_test_programmable_A_with_ethernet_mannul_channel_change/board_test_programmable_A_with_ethernet.srcs/sources_1/new/CLK_CH_A_generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CLK_CH_generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Kannect/board_test_programmable_A_with_ethernet_mannul_channel_change/board_test_programmable_A_with_ethernet.srcs/sources_1/new/CLK_D_A_generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CLK_D_generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Kannect/board_test_programmable_A_with_ethernet_mannul_channel_change/board_test_programmable_A_with_ethernet.srcs/sources_1/new/CLK_LATCH_A_generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CLK_LATCH_generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Kannect/board_test_programmable_A_with_ethernet_mannul_channel_change/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/new/PSI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PSI
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Kannect/board_test_programmable_A_with_ethernet_mannul_channel_change/board_test_programmable_A_with_ethernet.srcs/sources_1/new/PSI_stem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PSI_stem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Kannect/board_test_programmable_A_with_ethernet_mannul_channel_change/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/new/SPI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SPI_template
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Kannect/board_test_programmable_A_with_ethernet_mannul_channel_change/board_test_programmable_A_with_ethernet.srcs/sources_1/new/board_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module board_test_ABC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Kannect/board_test_programmable_A_with_ethernet_mannul_channel_change/board_test_programmable_A_with_ethernet.srcs/sources_1/imports/new/clk_booster.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_booster
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Kannect/board_test_programmable_A_with_ethernet_mannul_channel_change/board_test_programmable_A_with_ethernet.srcs/sources_1/new/dac_reset.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dac_reset
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Kannect/board_test_programmable_A_with_ethernet_mannul_channel_change/board_test_programmable_A_with_ethernet.srcs/sources_1/new/programmable_3_phase_clock.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module programmable_3_phase_clock
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Kannect/board_test_programmable_A_with_ethernet_mannul_channel_change/board_test_programmable_A_with_ethernet.srcs/sources_1/new/starter_ABC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module starter_ABC
+WARNING: [VRFC 10-756] identifier serial is used before its declaration [D:/Kannect/board_test_programmable_A_with_ethernet_mannul_channel_change/board_test_programmable_A_with_ethernet.srcs/sources_1/new/starter_ABC.v:290]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Kannect/board_test_programmable_A_with_ethernet_mannul_channel_change/board_test_programmable_A_with_ethernet.srcs/sources_1/new/structre_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structre_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Kannect/board_test_programmable_A_with_ethernet_mannul_channel_change/board_test_programmable_A_with_ethernet.srcs/sources_1/new/structure_clocks.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structure_clocks
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Kannect/board_test_programmable_A_with_ethernet_mannul_channel_change/board_test_programmable_A_with_ethernet.srcs/sim_1/new/ABC_switch_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ABC_switch_tb
+INFO: [VRFC 10-2458] undeclared symbol D, assumed default net type wire [D:/Kannect/board_test_programmable_A_with_ethernet_mannul_channel_change/board_test_programmable_A_with_ethernet.srcs/sim_1/new/ABC_switch_tb.v:63]
+INFO: [VRFC 10-2458] undeclared symbol D_bar, assumed default net type wire [D:/Kannect/board_test_programmable_A_with_ethernet_mannul_channel_change/board_test_programmable_A_with_ethernet.srcs/sim_1/new/ABC_switch_tb.v:64]
+INFO: [VRFC 10-2458] undeclared symbol DATA_OUT, assumed default net type wire [D:/Kannect/board_test_programmable_A_with_ethernet_mannul_channel_change/board_test_programmable_A_with_ethernet.srcs/sim_1/new/ABC_switch_tb.v:65]
+INFO: [VRFC 10-2458] undeclared symbol serial_stem, assumed default net type wire [D:/Kannect/board_test_programmable_A_with_ethernet_mannul_channel_change/board_test_programmable_A_with_ethernet.srcs/sim_1/new/ABC_switch_tb.v:72]
+INFO: [VRFC 10-2458] undeclared symbol load_spi_stem, assumed default net type wire [D:/Kannect/board_test_programmable_A_with_ethernet_mannul_channel_change/board_test_programmable_A_with_ethernet.srcs/sim_1/new/ABC_switch_tb.v:72]
+INFO: [VRFC 10-2458] undeclared symbol spi_clk_out_stem, assumed default net type wire [D:/Kannect/board_test_programmable_A_with_ethernet_mannul_channel_change/board_test_programmable_A_with_ethernet.srcs/sim_1/new/ABC_switch_tb.v:74]
+INFO: [VRFC 10-2458] undeclared symbol write, assumed default net type wire [D:/Kannect/board_test_programmable_A_with_ethernet_mannul_channel_change/board_test_programmable_A_with_ethernet.srcs/sim_1/new/ABC_switch_tb.v:75]
+INFO: [VRFC 10-2458] undeclared symbol SDI, assumed default net type wire [D:/Kannect/board_test_programmable_A_with_ethernet_mannul_channel_change/board_test_programmable_A_with_ethernet.srcs/sim_1/new/ABC_switch_tb.v:76]
+INFO: [VRFC 10-2458] undeclared symbol SYNC_bar, assumed default net type wire [D:/Kannect/board_test_programmable_A_with_ethernet_mannul_channel_change/board_test_programmable_A_with_ethernet.srcs/sim_1/new/ABC_switch_tb.v:76]
+INFO: [VRFC 10-2458] undeclared symbol LDAC_bar, assumed default net type wire [D:/Kannect/board_test_programmable_A_with_ethernet_mannul_channel_change/board_test_programmable_A_with_ethernet.srcs/sim_1/new/ABC_switch_tb.v:76]
+INFO: [VRFC 10-2458] undeclared symbol SCLK, assumed default net type wire [D:/Kannect/board_test_programmable_A_with_ethernet_mannul_channel_change/board_test_programmable_A_with_ethernet.srcs/sim_1/new/ABC_switch_tb.v:76]
+INFO: [VRFC 10-2458] undeclared symbol CLEAR_bar, assumed default net type wire [D:/Kannect/board_test_programmable_A_with_ethernet_mannul_channel_change/board_test_programmable_A_with_ethernet.srcs/sim_1/new/ABC_switch_tb.v:76]
+INFO: [VRFC 10-2458] undeclared symbol sys_clk_100M, assumed default net type wire [D:/Kannect/board_test_programmable_A_with_ethernet_mannul_channel_change/board_test_programmable_A_with_ethernet.srcs/sim_1/new/ABC_switch_tb.v:77]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Kannect/board_test_programmable_A_with_ethernet_mannul_channel_change/board_test_programmable_A_with_ethernet.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-2845] overwriting previous definition of module glbl [D:/Kannect/board_test_programmable_A_with_ethernet_mannul_channel_change/board_test_programmable_A_with_ethernet.sim/sim_1/behav/xsim/glbl.v:6]

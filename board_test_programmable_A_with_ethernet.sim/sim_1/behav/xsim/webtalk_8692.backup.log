@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Tue May 29 11:44:15 2018
+# Process ID: 8692
+# Current directory: D:/Kannect/board_test_programmable_A_with_ethernet_mannul_channel_change/board_test_programmable_A_with_ethernet.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source D:/Kannect/board_test_programmable_A_with_ethernet_mannul_channel_change/board_test_programmable_A_with_ethernet.sim/sim_1/behav/xsim/xsim.dir/ABC_switch_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/Kannect/board_test_programmable_A_with_ethernet_mannul_channel_change/board_test_programmable_A_with_ethernet.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: D:/Kannect/board_test_programmable_A_with_ethernet_mannul_channel_change/board_test_programmable_A_with_ethernet.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source D:/Kannect/board_test_programmable_A_with_ethernet_mannul_channel_change/board_test_programmable_A_with_ethernet.sim/sim_1/behav/xsim/xsim.dir/ABC_switch_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'D:/Kannect/board_test_programmable_A_with_ethernet_mannul_channel_change/board_test_programmable_A_with_ethernet.sim/sim_1/behav/xsim/xsim.dir/ABC_switch_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue May 29 11:44:17 2018. For additional details about this file, please refer to the WebTalk help file at D:/Xylinx/Vivado/2018.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue May 29 11:44:17 2018...

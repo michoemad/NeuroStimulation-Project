@@ -1,0 +1,23 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../board_test_programmable_A_with_ethernet.srcs/sources_1/ip/clk_wiz_100M_to_400M/clk_wiz_100M_to_400M_sim_netlist.v" \
+"../../../../board_test_programmable_A_with_ethernet.srcs/sources_1/new/CLK_CH_A_generator.v" \
+"../../../../board_test_programmable_A_with_ethernet.srcs/sources_1/new/CLK_D_A_generator.v" \
+"../../../../board_test_programmable_A_with_ethernet.srcs/sources_1/new/CLK_LATCH_A_generator.v" \
+"../../../../board_test_programmable_A_with_ethernet.srcs/sources_1/imports/new/PSI.v" \
+"../../../../board_test_programmable_A_with_ethernet.srcs/sources_1/new/PSI_stem.v" \
+"../../../../board_test_programmable_A_with_ethernet.srcs/sources_1/imports/new/SPI.v" \
+"../../../../board_test_programmable_A_with_ethernet.srcs/sources_1/new/board_test.v" \
+"../../../../board_test_programmable_A_with_ethernet.srcs/sources_1/imports/new/clk_booster.v" \
+"../../../../board_test_programmable_A_with_ethernet.srcs/sources_1/new/dac_reset.v" \
+"../../../../board_test_programmable_A_with_ethernet.srcs/sources_1/new/programmable_3_phase_clock.v" \
+"../../../../board_test_programmable_A_with_ethernet.srcs/sources_1/new/starter_ABC.v" \
+"../../../../board_test_programmable_A_with_ethernet.srcs/sources_1/new/structre_A.v" \
+"../../../../board_test_programmable_A_with_ethernet.srcs/sources_1/new/structure_clocks.v" \
+"../../../../board_test_programmable_A_with_ethernet.srcs/sim_1/new/ABC_switch_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

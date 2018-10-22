@@ -1,0 +1,114 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Thu Aug 23 15:12:07 2018
+| Host         : LAPTOP-HPTS9AFJ running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file board_testBC_control_sets_placed.rpt
+| Design       : board_testBC
+| Device       : xc7a200t
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    38 |
+| Unused register locations in slices containing registers |   166 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            8 |
+|      2 |            2 |
+|      3 |            1 |
+|      4 |            3 |
+|      6 |            2 |
+|      7 |            4 |
+|      8 |            2 |
+|      9 |            2 |
+|     10 |            2 |
+|     12 |            2 |
+|     13 |            1 |
+|     14 |            1 |
+|    16+ |            8 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              94 |           40 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              91 |           37 |
+| Yes          | No                    | No                     |             123 |           43 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              94 |           34 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------------------------+-------------------------------------------------------+-------------------------------------------------------------------------+------------------+----------------+
+|                      Clock Signal                      |                     Enable Signal                     |                             Set/Reset Signal                            | Slice Load Count | Bel Load Count |
++--------------------------------------------------------+-------------------------------------------------------+-------------------------------------------------------------------------+------------------+----------------+
+|  generatorBC/generator/high_f_clk1/bost1/inst/clk_out1 | generatorBC/generator/write_control_i_2_n_0           | generatorBC/generator/write_control1_out                                |                1 |              1 |
+|  generatorBC/generator/high_f_clk1/bost1/inst/clk_out1 | generatorBC/generator/testB/LATCH_B/CLK_LATCH_i_2_n_0 | generatorBC/generator/testB/D_B/CLK_D_reg_0                             |                1 |              1 |
+|  generatorBC/generator/high_f_clk1/bost1/inst/clk_out1 | generatorBC/generator/testB/D_B/CLK_D_i_1_n_0         | generatorBC/generator/testB/D_B/CLK_D_reg_0                             |                1 |              1 |
+|  generatorBC/generator/high_f_clk1/bost1/inst/clk_out1 | generatorBC/generator/testB/PHI_B/PHI2_i_2_n_0        | generatorBC/generator/testB/PHI_B/PHI2_i_1_n_0                          |                1 |              1 |
+|  generatorBC/generator/high_f_clk1/bost1/inst/clk_out1 | generatorBC/generator/testB/PHI_B/PHI1_i_2_n_0        | generatorBC/generator/testB/PHI_B/PHI1_i_1_n_0                          |                1 |              1 |
+|  clk125Mhz_BUFG                                        | nolabel_line189/i_rgmii_tx/doutctl[0]_i_1_n_0         |                                                                         |                1 |              1 |
+|  start_IBUF_BUFG                                       |                                                       |                                                                         |                1 |              1 |
+|  clk125Mhz_BUFG                                        | nolabel_line189/i_rgmii_tx/doutctl[1]_i_1_n_0         |                                                                         |                1 |              1 |
+|  generatorBC/generator/high_f_clk1/bost1/inst/clk_out1 | generatorBC/generator/testB/CH_B/CLK_CH_i_2_n_0       | generatorBC/generator/testB/CH_B/CLK_CH_i_1_n_0                         |                1 |              2 |
+|  psi_clk                                               |                                                       |                                                                         |                2 |              2 |
+|  eth_rxck_IBUF_BUFG                                    |                                                       |                                                                         |                1 |              3 |
+|  clk125Mhz_BUFG                                        | nolabel_line189/i_add_crc32/data_enable_out           | nolabel_line189/i_add_preamble/data_out_n_0                             |                1 |              4 |
+|  start_ethernet_IBUF_BUFG                              |                                                       |                                                                         |                2 |              4 |
+|  clk125Mhz_BUFG                                        | nolabel_line189/data/E[0]                             | nolabel_line189/data/SS[0]                                              |                1 |              4 |
+|  clk125Mhz_BUFG                                        |                                                       | reset_control_IBUF                                                      |                3 |              6 |
+|  clk125Mhz_BUFG                                        | generatorBC/channel_selector[5]_i_2_n_0               | generatorBC/channel_selector[5]_i_1_n_0                                 |                2 |              6 |
+|  clk125Mhz_BUFG                                        | generatorBC/addr_delay_i_1_n_0                        |                                                                         |                2 |              7 |
+|  clk125Mhz_BUFG                                        | generatorBC/addr_delay_i_1_n_0                        | generatorBC/ethernet_out[12]_i_1_n_0                                    |                2 |              7 |
+|  clk125Mhz_BUFG                                        | nolabel_line189/i_rgmii_tx/sel                        | nolabel_line189/i_add_preamble/fully_framed_enable                      |                5 |              7 |
+|  clk125Mhz_BUFG                                        | nolabel_line189/data/crc                              | nolabel_line189/data/crc_reg[1]                                         |                3 |              7 |
+|  clk125Mhz_BUFG                                        | nolabel_line189/i_rgmii_tx/dout[7]_i_1_n_0            |                                                                         |                2 |              8 |
+|  clk125Mhz_BUFG                                        | nolabel_line189/data/data_enable                      |                                                                         |                2 |              8 |
+|  clk125Mhz_BUFG                                        |                                                       | generatorBC/psi_clk_counter[8]_i_1_n_0                                  |                4 |              9 |
+|  clk125Mhz_BUFG                                        |                                                       | generatorBC/temp_clk_counter[8]_i_1_n_0                                 |                4 |              9 |
+|  clk125Mhz_BUFG                                        |                                                       | ethernet_speed_reg__0[3]                                                |                2 |             10 |
+|  generatorBC/generator/high_f_clk1/bost1/inst/clk_out1 |                                                       | generatorBC/generator/high_f_clk1/SR[0]                                 |                4 |             10 |
+|  clk125Mhz_BUFG                                        | nolabel_line189/i_add_preamble/fully_framed_enable    |                                                                         |                7 |             12 |
+|  clk125Mhz_BUFG                                        | nolabel_line189/data/counter[11]_i_1_n_0              |                                                                         |                3 |             12 |
+|  generatorBC/generator/high_f_clk1/bost1/inst/clk_out1 |                                                       |                                                                         |                6 |             13 |
+|  start_IBUF_BUFG                                       | generatorBC/generator/high_f_clk1/bost1/inst/locked   |                                                                         |                6 |             14 |
+|  clk125Mhz_BUFG                                        | nolabel_line189/i_add_crc32/data_enable_out           |                                                                         |                5 |             19 |
+|  clk125Mhz_BUFG                                        | generatorBC/delay                                     | generatorBC/delay[19]_i_1_n_0                                           |                6 |             20 |
+|  generatorBC/generator/high_f_clk1/bost1/inst/clk_out1 |                                                       | generatorBC/generator/high_f_clk1/posedge_boosted_clk_counter_2_reg[19] |               13 |             20 |
+|  clk125Mhz_BUFG                                        | nolabel_line189/data/crc                              |                                                                         |                9 |             25 |
+|  clk125Mhz_BUFG                                        | nolabel_line189/reset_counter[0]_i_1_n_0              |                                                                         |                7 |             25 |
+|  clk125Mhz_BUFG                                        |                                                       | nolabel_line189/clear                                                   |                7 |             27 |
+|  psi_clk                                               | generatorBC/set_up_start_stem_reg_n_0                 | reset_control_IBUF                                                      |                8 |             32 |
+|  clk125Mhz_BUFG                                        |                                                       |                                                                         |               28 |             71 |
++--------------------------------------------------------+-------------------------------------------------------+-------------------------------------------------------------------------+------------------+----------------+
+
+

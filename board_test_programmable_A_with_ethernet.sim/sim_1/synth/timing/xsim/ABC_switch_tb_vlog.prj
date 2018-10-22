@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"ABC_switch_tb_time_synth.v" \
+"../../../../../board_test_programmable_A_with_ethernet.srcs/sim_1/new/ABC_switch_tb.v" \
+
+# Do not sort compile order
+nosort

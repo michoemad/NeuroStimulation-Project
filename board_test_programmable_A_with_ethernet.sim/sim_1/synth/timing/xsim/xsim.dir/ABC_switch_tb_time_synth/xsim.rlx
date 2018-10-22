@@ -1,0 +1,12 @@
+
+{ 
+    crc :  8435373846912125015  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto 8265e9c2de5042ea9f671e1af1ad8afd --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot ABC_switch_tb_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.ABC_switch_tb xil_defaultlib.glbl" , 
+    buildDate : "Apr  4 2018" , 
+    buildTime : "19:30:32" , 
+    linkCmd : "D:\\Xylinx\\Vivado\\2018.1\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/ABC_switch_tb_time_synth/xsimk.exe\"   \"xsim.dir/ABC_switch_tb_time_synth/obj/xsim_0.win64.obj\" \"xsim.dir/ABC_switch_tb_time_synth/obj/xsim_1.win64.obj\" \"xsim.dir/ABC_switch_tb_time_synth/obj/xsim_2.win64.obj\" \"xsim.dir/ABC_switch_tb_time_synth/obj/xsim_3.win64.obj\" \"xsim.dir/ABC_switch_tb_time_synth/obj/xsim_4.win64.obj\" \"xsim.dir/ABC_switch_tb_time_synth/obj/xsim_5.win64.obj\" \"xsim.dir/ABC_switch_tb_time_synth/obj/xsim_6.win64.obj\" \"xsim.dir/ABC_switch_tb_time_synth/obj/xsim_7.win64.obj\" \"D:\\Xylinx\\Vivado\\2018.1\\lib\\win64.o\\\\librdi_simulator_kernel.dll\"  \"D:\\Xylinx\\Vivado\\2018.1\\lib\\win64.o\\\\librdi_simbridge_kernel.dll\"" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 
